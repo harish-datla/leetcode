@@ -21,14 +21,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  SHAMELESLLY COPIED TEMPLATE FROM MULTIPLE SOURCES - baba_yaga
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/  
-// There is no God but flying spaghetti monster  - pray him or else we will kill you //
 
-/* I'd like to also point out that the religious fascism we propagate is unnoticed because  every fucking piece of shit on this earth is kinda noob */
-
-// You cant prove there is no flyin spaghetti monster , so beleive him or i will kill you.
-
-/* once you come in , there is no leaving , we will kill you if you leave but of course 
- we will not say that while you accept our theology ..*/
 
 // All hail flyign spaghetti monster. 
 
