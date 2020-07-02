@@ -7,6 +7,7 @@
 |3|[ Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|[C++](./solutions/3.%20Longest%20Substring%20Without%20Repeating%20Characters.cpp)|8 ms|
 |5|[ Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[C++](./solutions/5.%20Longest%20Palindromic%20Substring.cpp)|4 ms|
 |6|[ ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|[C++](./solutions/6.%20ZigZag%20Conversion.cpp)|12 ms|
+|7|[ Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[C++](./solutions/7.%20Reverse%20Integer.cpp)|0 ms|
 |9|[ Palindrome Number](https://leetcode.com/problems/palindrome-number/)|[C++](./solutions/9.%20Palindrome%20Number.cpp)|12 ms|
 |11|[ Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[C++](./solutions/11.%20Container%20With%20Most%20Water.cpp)|20 ms|
 |12|[ Integer to Roman](https://leetcode.com/problems/integer-to-roman/)|[C++](./solutions/12.%20Integer%20to%20Roman.cpp)|8 ms|
