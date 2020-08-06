@@ -39,5 +39,5 @@
 |1503|[ Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/)|[C++](./solutions/1503.%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out%20of%20a%20Plank.cpp)|72 ms|
 |1507|[ Reformat Date](https://leetcode.com/problems/reformat-date/)|[C++](./solutions/1507.%20Reformat%20Date.cpp)|4 ms|
 |1508|[ Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/)|[C++](./solutions/1508.%20Range%20Sum%20of%20Sorted%20Subarray%20Sums.cpp)|852 ms|
-|1509|[ Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/)|[C++](./solutions/1509.%20Minimum%20Difference%20Between%20Largest%20and%20Smallest%20Value%20in%20Three%20Moves.cpp)|272 ms|
+|1509|[ Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/)|[C++](./solutions/1509.%20Minimum%20Difference%20Between%20Largest%20and%20Smallest%20Value%20in%20Three%20Moves.cpp)|180 ms|
 |1513|[ Number of Substrings With Only 1s](https://leetcode.com/problems/number-of-substrings-with-only-1s/)|[C++](./solutions/1513.%20Number%20of%20Substrings%20With%20Only%201s.cpp)|48 ms|
