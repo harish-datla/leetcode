@@ -38,3 +38,4 @@
 |1502|[ Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/)|[C++](./solutions/1502.%20Can%20Make%20Arithmetic%20Progression%20From%20Sequence.cpp)|12 ms|
 |1503|[ Last Moment Before All Ants Fall Out of a Plank](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/)|[C++](./solutions/1503.%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out%20of%20a%20Plank.cpp)|72 ms|
 |1507|[ Reformat Date](https://leetcode.com/problems/reformat-date/)|[C++](./solutions/1507.%20Reformat%20Date.cpp)|4 ms|
+|1509|[ Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/)|[C++](./solutions/1509.%20Minimum%20Difference%20Between%20Largest%20and%20Smallest%20Value%20in%20Three%20Moves.cpp)|272 ms|
