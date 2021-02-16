@@ -1,18 +1,20 @@
 func lengthOfLongestSubstring(s string) int {
-    mp := map[byte]int{}
+    mp := [128]int{}
     
     maxlen := 0
     temp := 0
 
     for i := 0 ; i < len(s) ; i++ {
-        val , ok := mp[s[i]]
+        val  := mp[s[i]]
         //fmt.Println(i)
-        if ok{
+        if val > 0 {
             i = val-1
             if(temp > maxlen){
                 maxlen = temp
             }
-            mp = make(map[byte]int)
+            for j := 0 ; j < 128 ; j++{
+                mp[j] = 0
+            }
             temp = 0
         }else{
             temp = temp + 1
