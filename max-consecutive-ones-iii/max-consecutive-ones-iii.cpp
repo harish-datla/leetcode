@@ -27,11 +27,17 @@
 class Solution {
 public:
     int longestOnes(vector<int>& A, int K) {
-       int i = 0, j;
-       for(j = 0 ; j < A.size() ; j++){
-           if(A[j] == 0)K--;
-           if(K <0 && A[i++] == 0)K++;
-       }
-        return j - i;
+        int start = 0, end = 0, maxlen = 0, cnt = 0;
+        for(int i = 0 ; i < A.size() ; i++){
+            if(A[i] == 0){
+                cnt++;
+            }
+            if(cnt > K){
+                if(A[start] == 0)cnt--;
+                start++;
+            }
+            maxlen = max(maxlen, i - start + 1);
+        }
+        return maxlen;
     }
 };
