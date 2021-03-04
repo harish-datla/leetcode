@@ -1,42 +1,28 @@
 class Solution {
 public:
-    int m,n;
-    bool check(vector<vector<char>>& board, const char* word, int i , int j){
-        if( i >= 0 && j >= 0 && i < m && j < n && *word == board[i][j] && board[i][j] != '\0'){ 
+    vector<vector<int>> dir{{0,1},{0,-1},{-1,0},{1,0}};
+    bool check(vector<vector<char>>& board, string word, int i , int j, int n, int w){
+        if(w == n)return true;
+        if( i >= 0 && j >= 0 && i < board.size() && j < board[0].size() && word[w] == board[i][j] && board[i][j] != '\0')          { 
             //cout << i << " " << j << endl;
-            if(*(word+1) == '\0')return true;
+            if(w+1 == n)return true;
             char temp = board[i][j];
             board[i][j] = '\0';
-            if(check(board,word+1,i-1,j) || check(board,word+1,i+1,j) || check(board,word+1,i,j-1)|| check(board,word+1,i,j+1) ){
+            if(check(board,word,i+1,j,n,w+1) || check(board,word,i,j+1,n,w+1) || check(board,word,i-1,j,n,w+1)|| check(board,word,i,j-1,n,w+1) )
                         return true;
-            }
                
             board[i][j] = temp;
             return false;
         }
         
-//         if(i >= 0 && j >= 0 && i < m && j < n && *word == board[i][j] && board[i][j] != '\0'){      
-//         if(*(word+1) == '\0')return true;
-//         char temp = board[i][j];
-//         board[i][j] = '\0';
-//         if(check(board,word+1,i-1,j) || check(board,word+1,i+1,j) || check(board,word+1,i,j-1)|| check(board,word+1,i,j+1))
-//                         return true;
-               
-//         board[i][j] = temp;
-//         return false;
-//         }
-        
         
         return false;
     }
     bool exist(vector<vector<char>>& board, string word) {
-        m = board.size();
-        n = board[0].size();
         for(int i = 0 ; i < board.size() ; i++)
-            for(int j = 0 ; j < board[0].size() ; j++){
-                    if(check(board,word.c_str(),i,j))
+            for(int j = 0 ; j < board[0].size() ; j++)
+                    if(check(board,word,i,j,word.size(),0))
                         return true;
-            }
         return false;
     }
 };
