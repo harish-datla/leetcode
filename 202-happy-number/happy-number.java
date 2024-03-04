@@ -1,5 +1,5 @@
 class Solution {
-    public int sumOfSquares(int n){
+    public int sumOfSquares(int n) {
         int ans = 0;
         while(n!=0){
             ans=ans+(n%10)*(n%10);
