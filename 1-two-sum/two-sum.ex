@@ -4,7 +4,8 @@ defmodule Solution do
     map = nums
              |> Enum.with_index()
              |> Enum.into(%{})
-    result = for i <- 0..(length(nums) - 1) do
+    len = (length(nums) - 1)
+    result = for i <- 0..len do
         if Map.get(map,target - Enum.at(nums,i)) != nil and Map.get(map,target - Enum.at(nums,i)) != i do
             [i,Map.get(map,target - Enum.at(nums,i)) ]
         end
