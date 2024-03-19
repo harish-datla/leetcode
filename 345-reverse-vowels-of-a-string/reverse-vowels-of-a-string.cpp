@@ -1,3 +1,9 @@
+const static auto ioSpeedUp = [](){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    return NULL;
+}();
 class Solution {
 public:
     string reverseVowels(string s) {
