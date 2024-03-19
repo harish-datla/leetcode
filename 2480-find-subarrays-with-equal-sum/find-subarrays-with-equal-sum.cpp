@@ -1,10 +1,12 @@
 class Solution {
 public:
     bool findSubarrays(vector<int>& nums) {
-        map<int,int> mp;
-        for(int i = 0 ; i < nums.size() - 1 ; i++){
-            if(mp[nums[i] + nums[i+1]])return true;
-            mp[nums[i] + nums[i+1]] = 1;
+        unordered_map<int,int> mp;
+        int size = nums.size() - 1;
+        for(int i = 0 ; i < size ; i++){
+            int sum = nums[i] + nums[i+1];
+            if(mp.count(sum))return true;
+            mp[sum] = 1;
         }
         return false; 
     }
