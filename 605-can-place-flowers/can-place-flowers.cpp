@@ -2,24 +2,16 @@ class Solution {
 public:
     bool canPlaceFlowers(vector<int>& a, int n) {
         int size = a.size();
-        if(size == 1 && a[0] == 0)n--;
+        int c = 1, m = 0;
         for(int i = 0 ; i < size  ; i++){
-            if(i == 0 && i+1 < size && a[i+1] == 0 && a[i] == 0){
-                a[i] = 1;
-                n--;
-                continue;
-            }
-            if(i == size - 1 && i-1 > 0 && a[i-1] == 0 && a[i] == 0 ){
-                a[i] = 1;
-                n--;
-                continue;
-            }
-            if( i-1 > 0 && i+1 < size && a[i-1] == 0 && a[i+1] == 0 && a[i] == 0){
-                a[i] = 1;
-                n--;
+            if(a[i] == 0)c++;
+            else{
+                m+=(c-1)/2; c = 0;
             }
         }
+        c++;
+        m+=(c-1)/2;
 
-        return n <= 0;
+        return m>=n;
     }
 };
