@@ -11,6 +11,9 @@
 class Solution {
 public:
     TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+        cout.tie(NULL);
         if(original == nullptr || cloned == nullptr || target == nullptr)
             return nullptr;
         
