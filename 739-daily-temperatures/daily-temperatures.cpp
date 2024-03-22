@@ -4,13 +4,9 @@ public:
         stack<pair<int,int>> s;
         vector<int> ans(t.size(),0);
         for(int i = 0 ; i < t.size() ; i++){
-            while(!s.empty()){
-                if(s.top().first < t[i]){
-                    ans[s.top().second] = i-s.top().second;
-                    s.pop();
-                }else{
-                    break;
-                }
+            while(!s.empty() && s.top().first < t[i]){
+                ans[s.top().second] = i-s.top().second;
+                s.pop();
             }
             s.push({t[i],i});
         }
