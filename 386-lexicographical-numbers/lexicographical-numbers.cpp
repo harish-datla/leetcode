@@ -2,20 +2,14 @@ class Solution {
 public:
     vector<int> lexicalOrder(int n) {
         vector<int> out;
-        int i = 0;
-        int num = 1;
-        while(i < n){
-            out.push_back(num);i++;
-            if(num*10 <= n)
-                num*=10;
-            else{
-                if(num >= n)
-                    num/=10;
-                num++;
-                while(num%10 == 0)num/=10;
-            }
-            
-        }
+        helper(1,n,out);
         return out; 
+    }
+
+    void helper(int i , int n , vector<int>& out){
+        if(i > n) return;
+        out.push_back(i);
+        helper(i*10, n , out);
+        if(i%10 != 9)helper(i+1,n,out);
     }
 };
