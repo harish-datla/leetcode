@@ -21,9 +21,10 @@ public:
         }
     }
 
-    int sumNumbers(TreeNode* root) {
-        int ans = 0;
-        sumNumbers(root,ans,0);
-        return ans;
+    int sumNumbers(TreeNode* root, int num = 0) {
+        if(!root)return 0;
+        if(root->left == NULL && root->right == NULL)return num*10+root->val;
+        return sumNumbers(root->left, num*10 + root->val) + 
+        sumNumbers(root->right, num*10 + root->val);
     }
 };
