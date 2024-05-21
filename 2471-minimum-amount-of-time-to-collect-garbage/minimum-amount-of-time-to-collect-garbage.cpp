@@ -32,7 +32,6 @@ public:
             }
         }
        }
-       cout << pIdx << mIdx << gIdx << endl;
        if(pIdx >= 0)p+=t[pIdx];
        if(gIdx >= 0)g+=t[gIdx];
        if(mIdx >= 0)m+=t[mIdx];
