@@ -39,7 +39,8 @@ public:
         if(carry){
             ptr->next =  new ListNode(carry);
         }
-
-        return head->next;
+        ListNode* result = head->next;
+        delete head;
+        return result;
     }
 };
