@@ -15,17 +15,9 @@ public:
         return gcd(b%a,a);
     }
     ListNode* insertGreatestCommonDivisors(ListNode* head) {
-        ListNode* dummyHead = head;
-
-        while(head && head->next){
-            //cout << head->val << " ";
-            ListNode* ptr = head->next;
-            head->next = new ListNode(gcd(head->val,head->next->val));
-            head->next->next = ptr;
-            head = head->next->next;
+        for(auto node = head ; node->next != nullptr ; node = node->next->next){
+            node->next = new ListNode(gcd(node->val,node->next->val),node->next);
         }
-        head = dummyHead;
-        //delete(dummyHead);
         return head;
     }
 };
