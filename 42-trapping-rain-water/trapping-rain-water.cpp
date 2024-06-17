@@ -6,7 +6,7 @@ public:
        int idx = 0;
        int water = 0;
        while(idx < height.size()){
-          if(s.empty() || height[s.top()] >= height[idx]){
+          if(s.empty() || height[s.top()] > height[idx]){
             s.push(idx);
             idx++;
           }else{
