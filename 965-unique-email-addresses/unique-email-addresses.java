@@ -1,16 +1,10 @@
 class Solution {
 
     public String getSanitizedEmail(String email){
-        String sanitizedEmail = "";
-        for(int i = 0 ; i < email.length() ; i++){
-            char c = email.charAt(i);
-            if(c == '+' || c == '@')break;
-            if(c == '.')continue;
-            sanitizedEmail+=c;
-        }
-        int indexOfAt = email.indexOf('@');
-        sanitizedEmail = sanitizedEmail + email.substring(indexOfAt);
-        return sanitizedEmail;
+        String[] parts = email.split("@");
+        String[] locals = parts[0].split("\\+");
+        String localName = locals[0].replace(".", "");
+        return localName + '@' + parts[1];
     }
 
     public int numUniqueEmails(String[] emails) {
